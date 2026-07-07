@@ -39,6 +39,7 @@
 - **Given** JWT sai/hết hạn, **When** gọi upload, **Then** 401 — không có gì lên S3.
 - **Given** file sai định dạng hoặc > 50MB, **When** upload, **Then** Golang từ chối ngay với mã lỗi rõ — không có gì lên S3.
 - **Given** callback sang Java thất bại, **When** retry hết N lần, **Then** file rác trên S3 được dọn (hoặc đánh dấu orphan để job dọn định kỳ) và client nhận thông báo lỗi.
+- **Given** callback lần đầu đã thành công nhưng Golang không nhận được response (timeout) và retry, **When** Java nhận callback lặp với cùng `s3Key`, **Then** trả 409 và không tạo Source trùng (idempotency theo `s3Key` — xem `07-architecture.md` §2.1).
 
 ---
 

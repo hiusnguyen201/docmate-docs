@@ -1,4 +1,4 @@
-# UC-A3 — Đăng nhập bằng Google OAuth (kèm account linking)
+# UC-A3 — Đăng nhập Google (OAuth)
 
 | Module | Story | AC | Test |
 |---|---|---|---|

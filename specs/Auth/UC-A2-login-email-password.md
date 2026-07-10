@@ -1,4 +1,4 @@
-# UC-A2 — Đăng nhập / Đăng xuất bằng JWT (dùng chung Java + Golang)
+# UC-A2 — Đăng nhập Email/Mật khẩu
 
 | Module | Story | AC | Test |
 |---|---|---|---|
